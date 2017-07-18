@@ -32,7 +32,7 @@ For a 20 sided dice for something like D&D use this in Python:
 Methods for Dice:
 
 >>> dice.roll()   # This causes the list under the Dice.values to simulate a new roll.
->>> dice.values  # This will show the list of the values on the dice.  the list is equal in length to the number of dice
+>>> dice.values  # This will show the list of the values on the dice. The list is equal in length to the number of dice
 
 
 Cards
