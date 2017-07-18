@@ -1,8 +1,8 @@
 =======================
 Gambling Python Package
 =======================
-A project to create the necessary tools for creating gambling parts, such as cards and dice
----------------------------------------------------------------------------------
+A project to create the necessary tools for gambling, such as cards and dice
+----------------------------------------------------------------------------
 :Author: CJ Stein
 :Version: 2017.07
 :Python Version: Only Tested on Python 3
@@ -20,14 +20,17 @@ Input for Dice:
 - sides=6       # This is the number of sides on each dice
 
 For 5 6-sided dice for something such as Yahtzee here would be the command:
+
 >>> from gambling import Dice
 >>> dice = Dice(num=5)
 
 For a 20 sided dice for something like D&D use this in Python:
+
 >>> from gambling import Dice
 >>> dice = Dice(sides=20)
 
 Methods for Dice:
+
 >>> dice.roll()   # This causes the list under the Dice.values to simulate a new roll.
 >>> dice.values  # This will show the list of the values on the dice.  the list is equal in length to the number of dice
 
@@ -35,6 +38,7 @@ Methods for Dice:
 Cards
 -----
 There are two objects in the Cards package:
+
 - Card
 - Deck
 
@@ -42,6 +46,7 @@ A Deck builds a list of Card objects.  Cards rank and suits can be called, along
 The input needed for a card is a single letter rank as a string and a single letter suit.
 
 Some things you can get from card:
+
 >>> from gambling import Card, Deck
 >>> AceOfSpades = Card('A','S')
 >>> TenOfHearts = Card('10','H')
@@ -52,6 +57,7 @@ Some things you can get from card:
 
 Making cards by themselves isn't very useful, but making decks will be useful and you can use the Card object to get a value
 There is one optional input for Deck:
+
 - num = 1  #  It defaults to using one deck, but you can change that to multiple decks if needed for something like blackjack
 
 >>> PokerDeck = Deck()
