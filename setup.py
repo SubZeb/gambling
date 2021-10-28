@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='gambling',
-    version='1.0.0.dev1',
+    version='1.0.0.dev2',
     url='https://github.com/SubZeb/gambling',
     license='MIT',
     author='CJ Stein',
