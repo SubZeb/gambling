@@ -1,4 +1,3 @@
-from itertools import product
 from random import randint
 
 
@@ -7,7 +6,7 @@ class Dice(object):
         self.num = num
         self.sides = sides
         self.values = []
-        for i in range(self.num):
+        for _ in range(self.num):
             self.values.append(randint(1,self.sides))
         self.roll()
 
