@@ -1,5 +1,7 @@
 venv\*
+.pypirc
 .idea\*
 .vscode\*
 .vscode-test\*
 .vscode-test-tmp\*
+dist\*
