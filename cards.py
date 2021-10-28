@@ -3,6 +3,10 @@ from itertools import product
 
 
 class Card(object):
+    """
+    A card object. requires a suit and a rank(A, K, Q, J, 10, 9, etc.).  The Card.value is the value of the card
+    for comparison purposes, but the property bj_value can be used to get the value of the card for blackjack.
+    """
     def __init__(self, rank, suit):
         ranks = {'K': 13,
                  'Q': 12,
@@ -13,6 +17,19 @@ class Card(object):
         self.rank = rank
         self.suit = suit.upper()
         self.value = int(rank) if rank.isdigit() else ranks[rank]
+
+    @property
+    def bj_value(self):
+        """
+        Return the value of the card for blackjack
+        :return: value of card for blackjack
+        """
+        value = self.value
+        if value == 14:
+            value = 11
+        elif value > 10:
+            value = 10
+        return value
 
     def __repr__(self):
         return '{}{}'.format(self.rank, self.suit)
