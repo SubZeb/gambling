@@ -1,7 +1,8 @@
-venv\*
+venv/*
 .pypirc
-.idea\*
-.vscode\*
-.vscode-test\*
-.vscode-test-tmp\*
-dist\*
+/.idea/*
+/.vscode/*
+/.vscode-test/*
+/.vscode-test-tmp/*
+/dist/*
+/src/gambling.egg-info/*
