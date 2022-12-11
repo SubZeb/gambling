@@ -1,4 +1,4 @@
-from random import randint
+from random import choice
 
 
 class Number:
@@ -79,4 +79,7 @@ class Board:
         self.numbers = [Number(str(i)) for i in range(1, 37)]
         self.numbers.append(Number('0'))
         self.numbers.append(Number('00'))
+        self.spin_value = None
 
+    def spin(self):
+        self.spin_value = choice(self.numbers)
